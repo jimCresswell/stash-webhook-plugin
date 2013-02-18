@@ -6,7 +6,7 @@ When running Stash add the following to your command line arguments:
 
 Where $URL will be replaced with the HTTP url of the repository, and $BRANCHES contains a comma separated list of branches.
 
-To build this plugin use the standard Atlassian Plugin SDK and/or run:
+To build this plugin use the standard Atlassian Plugin SDK and/or run the following (*must* be Maven 2.1.0):
 
     mvn install
 
