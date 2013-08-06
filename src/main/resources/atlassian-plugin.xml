@@ -7,6 +7,12 @@
 
     <component-import key="nav-builder" interface="com.atlassian.stash.nav.NavBuilder"/>
 
-    <component key="web-hook" class="com.atlassian.stash.plugin.webook.WebHook"/>
+    <repository-hook key="web-hook" name="Simple Webhook" class="com.atlassian.stash.plugin.webook.WebHook">
+        <description>Webhook for notifying a configured endpoint of changes to this repository.</description>
+        <config-form>
+            <view>stash.config.webhook.formContents</view>
+            <directory location="/static/"/>
+        </config-form>
+    </repository-hook>
 
 </atlassian-plugin>
